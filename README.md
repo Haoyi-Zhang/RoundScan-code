@@ -20,7 +20,7 @@ The producer closes an abstractly safe leaf only when the current exact checker 
 - `results/paper-results.tex`: manuscript rows generated from the same raw records and stored certificate files.
 - `tests/run_all.py`: arithmetic cross-checks, exact-oracle comparisons, certificate and mutation checks, reduction checks, leaf-admission checks, transport checks, and result reconciliation.
 - `proofs/`: hand proofs and claim-level statement index. These are not a mechanized formalization.
-- `docs/validation-contract.md`: requirement-to-test map for the repaired acceptance boundary.
+- `docs/validation-contract.md`: requirement-to-test map for the certificate acceptance boundary.
 - `claim_evidence_ledger.csv`: paper claim to theorem, implementation, and result mapping.
 - `reference-audit.csv`: one provenance row for every manuscript reference.
 - `external_resources.csv`: scholarly/software resources and acquisition notes.
@@ -47,13 +47,13 @@ Each frozen task has a 20-second internal limit and 5,000-node cover limit. Each
 
 `python3 -B tests/test_exact_boundaries.py` runs ten additional regression methods for wide-word exact extrema, unchanged public width admission, cooperative deadlines, exact-leaf rejection, interpreter stack exhaustion, canonical LF serialization, and separate campaign output. They are separate from the historical 188,847-unit ledger. `.github/workflows/scientific-checks.yml` now runs the full fresh campaign and then rechecks retained evidence and these regressions on Ubuntu 24.04 with Python 3.12, one CPU, a 2 GiB address-space limit, and a 540-second whole-command limit; it uploads raw logs and result files even on failure. A workflow definition alone is not evidence of successful execution.
 
-### Verified subsequent native run
+### Included native-run data
 
-The successful full run `37480596336` at head `32924e0042115499378dfad9648f6d0d619fc4a6`, artifact `11420554117`, produced a complete fresh 440-task grid: 72 frozen plus 16 stress inputs, each under five methods (360 + 80 tasks). `results/current-replay/` retains exactly 780 ordinary-data/log files copied byte-for-byte from that archive: 440 raw records, 334 certificates, two summary JSONs, two metrics CSVs, and two scientific gate/log files. Native CPU/wall/RSS, certificate serialization lengths and timed-unknown progress stay here, not in historical tables. The original ZIP and earlier failed-upload/replay history are not altered; the older proof-check-only replay is not credited with this campaign.
+The included Ubuntu campaign covers a 440-task grid: 72 frozen plus 16 stress inputs, each under five methods (360 + 80 tasks). `results/current-replay/` contains 780 data and log files: 440 raw records, 334 certificates, two summary JSONs, two metrics CSVs, and two gate/log files. Its CPU, wall time, RSS, certificate lengths and timed-unknown progress are kept separate from the recorded manuscript tables.
 
-All 334 conclusive certificates were accepted: 178 safe conclusions and 156 violation conclusions. The other 106 checker fields are null (88 exact-DP baselines and 18 unknown covers), **not** 106 counterexamples. All 440 scientific raw fields and all complete certificate bodies agree with historical and prior private records, apart from timing fields and host-dependent partial progress in timed unknowns. Frozen counts and completed-search topology agree; the original Linux/Python 3.13.5 measurements and earlier Windows checks remain separate. The same run replayed 188,847 heterogeneous assertion units and passed ten separate boundary methods; neither count is an independent statistical sample size or blanket proof validation.
+All 334 conclusive certificates were accepted: 178 safe conclusions and 156 violation conclusions. The remaining 106 null checker fields comprise 88 exact-DP baselines and 18 unknown covers. The 440 raw task fields and complete certificates agree with the recorded campaign, excluding timings and host-dependent partial progress in timed unknowns. This run also replayed 188,847 heterogeneous assertion units and ten separate boundary methods; these counts describe test coverage, not independent statistical samples.
 
-Full native certificate-embedded inputs are available for 85 of 88 instances. `stress-005`, `stress-009` and `stress-013` have no conclusive cover, and the archive has no standalone copies of their full matrices/boxes. Their five-method raw rows and available input metadata agree; the driver records successful case regeneration. Independent full-input-byte equality for those three cannot be claimed from this archive. This evidence-scope limit is not a scientific failure. No archive code was executed during verification or retention, and no inputs were reconstructed to fill the gap. The original `results/` remains the historical source for generated manuscript tables.
+Full certificate-embedded inputs are available for 85 of 88 instances. `stress-005`, `stress-009` and `stress-013` have no conclusive cover or standalone full matrices/boxes in the native-run data. Their five-method rows and available input metadata agree, and the driver log records case regeneration; these files alone do not establish equality of their full input bytes. Manuscript tables are generated from the raw records in `results/`.
 
 Check one certificate directly:
 
@@ -110,14 +110,13 @@ remain unchanged.
 
 Run `python3 -B tests/test_association_coverage.py -v` (five separate methods),
 then `python3 -B scripts/association_coverage.py --out ../association-study`
-into a new absent directory. No inherited cases/results are overwritten;
-`write_collections` is never called. A separate scientific CI job requires
-these controls and this bounded cohort, preserving raw outputs even on
-failure. Its definition is not a successful hosted-run receipt. The local raw
-cohort evidence is a separate review handoff, not inserted into the historical
-result tree or its 188,847-unit ledger.
+into a new absent directory. This command leaves the shipped cases and
+results untouched and writes the association cohort separately. The
+`association-coverage` CI job runs the same controls and cohort and retains
+their raw outputs. The cohort is distinct from the recorded 188,847 assertion
+units.
 
-The current scalar exact evaluator reuses immutable summaries for identical
+The scalar exact evaluator reuses immutable summaries for identical
 complete chunk-input tuples within a single layer, capped at 4,096 entries.
 Every reference/carry transition is still evaluated, and each summary is rebuilt
 under the declared association rather than incrementally imposing a left tree.
@@ -126,13 +125,13 @@ entries, not a measured peak-memory or end-to-end speedup claim. The existing
 full-instance cache and every admission/deadline rule remain unchanged.
 Run the separate portable four-method definition-oracle regression with
 `python3 -B tests/test_scalar_summary_cache.py -v`; scientific CI requires it
-and retains its log without changing the old 188,847-unit or ten-method gates.
-All historical/native measurements above remain evidence for their original
-pre-summary-reuse sources; no new timing has been performed.
+and retains its log alongside the 188,847-unit and ten-method gates.
+The recorded timing tables measure the kernels used in those campaigns;
+summary reuse has no separate wall-time measurement.
 
 The checker accepts a closed JSON schema: semantic integers must be JSON integers (not booleans, floats, or strings), duplicate keys and nonstandard numeric constants are rejected, and explicit byte/node/depth plus model-size limits are enforced. It uses a separately written concrete-integer interpreter plus complete multidimensional enumeration or exact scalar DP. It does not use the producer's numbered-atom abstraction to discharge a leaf. The producer and checker share the structural leaf-admission predicate solely to avoid producing leaves the checker cannot replay.
 
-The checker remains code produced and reviewed within one development process, not an independently authored or machine-verified checker. General theorem arguments in `proofs/arguments.tex` are hand proofs. Finite tests validate implemented cases but do not mechanize those general arguments. The generated suites are discriminating semantic and certificate tests, not trained-model, accelerator, deployment, or workload-performance evidence. Input boxes are Cartesian; one scale and rounding mode apply per instance; other large multidimensional leaves can exceed the exact checker's admitted limit and force subdivision or `unknown`.
+General theorem arguments in `proofs/arguments.tex` are hand proofs. The checker and finite tests check implemented cases rather than mechanizing these arguments. The generated suites cover semantics and certificates, not trained-model, accelerator or deployment performance. Input boxes are Cartesian; one scale and rounding mode apply per instance; large multidimensional leaves can exceed the exact checker's admitted limit and force subdivision or `unknown`.
 
 ## License
 
