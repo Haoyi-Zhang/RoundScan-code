@@ -1,0 +1,139 @@
+{
+  "association": "left",
+  "boxes": [
+    [
+      [
+        0,
+        2
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    [
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        1
+      ]
+    ]
+  ],
+  "chunk_length": 2,
+  "dimension": 2,
+  "family": "diagonal",
+  "h0": [
+    3,
+    1
+  ],
+  "horizon": 3,
+  "matrices": [
+    [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ]
+  ],
+  "metadata": {
+    "generator_seed_family": "diagonal",
+    "oracle_earliest_output": 1,
+    "oracle_ranges": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          -1,
+          0
+        ]
+      ]
+    ],
+    "oracle_safe": false,
+    "oracle_witness": [
+      0,
+      -1,
+      0,
+      0
+    ],
+    "prefix_evaluations": 819,
+    "split": "frozen",
+    "tolerance_rule": "exact-max-minus-one-at-first-positive-coordinate"
+  },
+  "name": "case-026",
+  "rounding": "floor",
+  "scale": 2,
+  "tolerances": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "width": 4
+}

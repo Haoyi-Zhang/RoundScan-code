@@ -1,0 +1,29 @@
+{
+  "case": "stress-007",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 16,
+    "cpu_seconds": 0.033899101000000265,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 16,
+  "method": "interval",
+  "task": {
+    "certificate": "results/certificates/stress/stress-007-interval.json",
+    "certificate_bytes": 3157,
+    "diagnostics": {
+      "cpu_seconds": 0.003126669999999998,
+      "max_nodes": 20000,
+      "nodes": 16,
+      "stop_reason": null,
+      "timeout_seconds": 5.0,
+      "wall_seconds": 0.003126010999949358
+    },
+    "kind": "cover",
+    "peak_rss_kib": 116676,
+    "process_wall_seconds": 0.7437565840000389,
+    "status": "safe"
+  }
+}

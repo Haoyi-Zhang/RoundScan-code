@@ -1,0 +1,29 @@
+{
+  "case": "case-011",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 159,
+    "cpu_seconds": 0.01722917199999996,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "coupled",
+  "horizon": 3,
+  "method": "residue",
+  "task": {
+    "certificate": "results/certificates/frozen/case-011-residue.json",
+    "certificate_bytes": 18088,
+    "diagnostics": {
+      "cpu_seconds": 0.28983978599999993,
+      "max_nodes": 5000,
+      "nodes": 159,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.29040258700001687
+    },
+    "kind": "cover",
+    "peak_rss_kib": 95656,
+    "process_wall_seconds": 1.1838925540000673,
+    "status": "safe"
+  }
+}

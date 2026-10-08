@@ -1,0 +1,9 @@
+{
+  "fresh_tasks": 440,
+  "splits": {
+    "frozen": 360,
+    "stress": 80
+  },
+  "unknowns_retained": true,
+  "historical_measurements_overwritten": false
+}

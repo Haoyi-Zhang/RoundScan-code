@@ -1,0 +1,29 @@
+{
+  "case": "case-037",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 56,
+    "cpu_seconds": 0.002655282000000092,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 4,
+  "method": "syntactic",
+  "task": {
+    "certificate": "results/certificates/frozen/case-037-syntactic.json",
+    "certificate_bytes": 5800,
+    "diagnostics": {
+      "cpu_seconds": 0.053263852000000056,
+      "max_nodes": 5000,
+      "nodes": 56,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.053266421999978775
+    },
+    "kind": "cover",
+    "peak_rss_kib": 95912,
+    "process_wall_seconds": 0.6962440870000819,
+    "status": "safe"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "case": "case-040",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 30,
+    "cpu_seconds": 0.0015328980000000048,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "stable",
+  "horizon": 4,
+  "method": "syntactic",
+  "task": {
+    "certificate": "certificates/frozen/case-040-syntactic.json",
+    "certificate_bytes": 3398,
+    "diagnostics": {
+      "cpu_seconds": 0.025972778999999994,
+      "max_nodes": 5000,
+      "nodes": 30,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.025274300999996058
+    },
+    "kind": "cover",
+    "peak_rss_kib": 20108,
+    "process_wall_seconds": 0.0751360419999969,
+    "status": "safe",
+    "worker_stderr": "",
+    "worker_stdout": "{\"certificate\": \"/home/runner/work/_temp/roundscan-campaign/certificates/frozen/case-040-syntactic.json\", \"certificate_bytes\": 3398, \"diagnostics\": {\"cpu_seconds\": 0.025972778999999994, \"max_nodes\": 5000, \"nodes\": 30, \"stop_reason\": null, \"timeout_seconds\": 20.0, \"wall_seconds\": 0.025274300999996058}, \"kind\": \"cover\", \"peak_rss_kib\": 20108, \"status\": \"safe\"}\n"
+  }
+}

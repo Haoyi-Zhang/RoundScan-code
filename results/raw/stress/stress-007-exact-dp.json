@@ -1,0 +1,21 @@
+{
+  "case": "stress-007",
+  "checker": null,
+  "family": "unstable",
+  "horizon": 16,
+  "method": "exact-dp",
+  "task": {
+    "kind": "baseline",
+    "peak_rss_kib": 116676,
+    "process_wall_seconds": 0.7496355960000756,
+    "result": {
+      "cpu_seconds": 0.02876552499999996,
+      "earliest_output": null,
+      "queries": 16,
+      "status": "safe",
+      "stop_reason": null,
+      "wall_seconds": 0.028766025999971134,
+      "witness": null
+    }
+  }
+}

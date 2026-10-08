@@ -1,0 +1,23 @@
+{
+  "case": "stress-009",
+  "checker": null,
+  "family": "stable",
+  "horizon": 32,
+  "method": "residue",
+  "task": {
+    "certificate": null,
+    "certificate_bytes": null,
+    "diagnostics": {
+      "cpu_seconds": 4.987646980999999,
+      "max_nodes": 20000,
+      "nodes": 1890,
+      "stop_reason": "wall-clock limit",
+      "timeout_seconds": 5.0,
+      "wall_seconds": 5.002782460999924
+    },
+    "kind": "cover",
+    "peak_rss_kib": 116676,
+    "process_wall_seconds": 5.779534078999973,
+    "status": "unknown"
+  }
+}

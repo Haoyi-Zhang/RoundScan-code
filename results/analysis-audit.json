@@ -1,0 +1,91 @@
+{
+  "certificate_files": {
+    "frozen": {
+      "checked_certificates": 288,
+      "errors": [],
+      "ok": true
+    },
+    "stress": {
+      "checked_certificates": 46,
+      "errors": [],
+      "ok": true
+    }
+  },
+  "frozen_table_source": {
+    "exact-dp": {
+      "certificate_bytes": 0,
+      "checker_cpu_seconds": 0.0,
+      "nodes": 0,
+      "producer_cpu_seconds": 0.3531800919999999,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "fresh": {
+      "certificate_bytes": 384903,
+      "checker_cpu_seconds": 0.37425049600000226,
+      "nodes": 3260,
+      "producer_cpu_seconds": 4.181677131999999,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "interval": {
+      "certificate_bytes": 2583453,
+      "checker_cpu_seconds": 0.5976319950000017,
+      "nodes": 24774,
+      "producer_cpu_seconds": 1.556767213,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "residue": {
+      "certificate_bytes": 385082,
+      "checker_cpu_seconds": 0.3848641499999993,
+      "nodes": 3260,
+      "producer_cpu_seconds": 4.099750941,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "syntactic": {
+      "certificate_bytes": 385230,
+      "checker_cpu_seconds": 0.3806429300000004,
+      "nodes": 3260,
+      "producer_cpu_seconds": 4.098502368,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    }
+  },
+  "paper_fragment_sync": {
+    "checked": true,
+    "matched": true,
+    "path": "/mnt/data/_taco_fix/work/paper/generated-results.tex"
+  },
+  "splits": {
+    "frozen": {
+      "complete_case_method_grid": true,
+      "expected_instances": 72,
+      "expected_rows": 360,
+      "instances": 72,
+      "ok": true,
+      "rows": 360
+    },
+    "stress": {
+      "complete_case_method_grid": true,
+      "expected_instances": 16,
+      "expected_rows": 80,
+      "instances": 16,
+      "ok": true,
+      "rows": 80
+    }
+  },
+  "status": "PASS",
+  "stress_by_horizon_rows": 20
+}

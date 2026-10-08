@@ -1,0 +1,29 @@
+{
+  "case": "stress-015",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 64,
+    "cpu_seconds": 0.007338406999999769,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 64,
+  "method": "residue",
+  "task": {
+    "certificate": "results/certificates/stress/stress-015-residue.json",
+    "certificate_bytes": 21703,
+    "diagnostics": {
+      "cpu_seconds": 0.7611001529999999,
+      "max_nodes": 20000,
+      "nodes": 64,
+      "stop_reason": null,
+      "timeout_seconds": 5.0,
+      "wall_seconds": 0.7616898210001182
+    },
+    "kind": "cover",
+    "peak_rss_kib": 116676,
+    "process_wall_seconds": 1.4272955589999583,
+    "status": "safe"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "case": "case-031",
+  "checker": null,
+  "family": "coupled",
+  "horizon": 3,
+  "method": "exact-dp",
+  "task": {
+    "kind": "baseline",
+    "peak_rss_kib": 20108,
+    "process_wall_seconds": 0.04999434999999863,
+    "result": {
+      "cpu_seconds": 0.0019971299999999997,
+      "earliest_output": 1,
+      "queries": 2,
+      "status": "violated",
+      "stop_reason": null,
+      "wall_seconds": 0.0022590590000035604,
+      "witness": [
+        -1,
+        -1,
+        -14,
+        0
+      ]
+    },
+    "worker_stderr": "",
+    "worker_stdout": "{\"kind\": \"baseline\", \"peak_rss_kib\": 20108, \"result\": {\"cpu_seconds\": 0.0019971299999999997, \"earliest_output\": 1, \"queries\": 2, \"status\": \"violated\", \"stop_reason\": null, \"wall_seconds\": 0.0022590590000035604, \"witness\": [-1, -1, -14, 0]}}\n"
+  }
+}

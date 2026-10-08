@@ -1,0 +1,111 @@
+{
+  "association": "left",
+  "boxes": [
+    [
+      [
+        -2,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ]
+    ],
+    [
+      [
+        5,
+        7
+      ]
+    ],
+    [
+      [
+        -2,
+        0
+      ]
+    ]
+  ],
+  "chunk_length": 2,
+  "dimension": 1,
+  "family": "stable",
+  "h0": [
+    -1
+  ],
+  "horizon": 4,
+  "matrices": [
+    [
+      [
+        3
+      ]
+    ],
+    [
+      [
+        2
+      ]
+    ],
+    [
+      [
+        3
+      ]
+    ],
+    [
+      [
+        3
+      ]
+    ]
+  ],
+  "metadata": {
+    "generator_seed_family": "stable",
+    "oracle_earliest_output": null,
+    "oracle_ranges": [
+      [
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          -1,
+          1
+        ]
+      ]
+    ],
+    "oracle_safe": true,
+    "oracle_witness": null,
+    "prefix_evaluations": 120,
+    "split": "frozen",
+    "tolerance_rule": "exact-max"
+  },
+  "name": "case-036",
+  "rounding": "rne",
+  "scale": 4,
+  "tolerances": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1
+    ]
+  ],
+  "width": 4
+}

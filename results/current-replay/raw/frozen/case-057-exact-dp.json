@@ -1,0 +1,26 @@
+{
+  "case": "case-057",
+  "checker": null,
+  "family": "unstable",
+  "horizon": 4,
+  "method": "exact-dp",
+  "task": {
+    "kind": "baseline",
+    "peak_rss_kib": 20492,
+    "process_wall_seconds": 0.049341814999998235,
+    "result": {
+      "cpu_seconds": 0.0,
+      "earliest_output": 1,
+      "queries": 2,
+      "status": "violated",
+      "stop_reason": null,
+      "wall_seconds": 0.0005189380000061306,
+      "witness": [
+        0,
+        -1
+      ]
+    },
+    "worker_stderr": "",
+    "worker_stdout": "{\"kind\": \"baseline\", \"peak_rss_kib\": 20492, \"result\": {\"cpu_seconds\": 0.0, \"earliest_output\": 1, \"queries\": 2, \"status\": \"violated\", \"stop_reason\": null, \"wall_seconds\": 0.0005189380000061306, \"witness\": [0, -1]}}\n"
+  }
+}

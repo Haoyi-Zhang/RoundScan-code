@@ -1,0 +1,31 @@
+{
+  "case": "case-013",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 68,
+    "cpu_seconds": 0.001990590999999986,
+    "error": null,
+    "status": "violated"
+  },
+  "family": "unstable",
+  "horizon": 4,
+  "method": "residue",
+  "task": {
+    "certificate": "certificates/frozen/case-013-residue.json",
+    "certificate_bytes": 6633,
+    "diagnostics": {
+      "cpu_seconds": 0.052987924000000006,
+      "max_nodes": 5000,
+      "nodes": 68,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.05247110599999871
+    },
+    "kind": "cover",
+    "peak_rss_kib": 19724,
+    "process_wall_seconds": 0.1007190869999981,
+    "status": "violated",
+    "worker_stderr": "",
+    "worker_stdout": "{\"certificate\": \"/home/runner/work/_temp/roundscan-campaign/certificates/frozen/case-013-residue.json\", \"certificate_bytes\": 6633, \"diagnostics\": {\"cpu_seconds\": 0.052987924000000006, \"max_nodes\": 5000, \"nodes\": 68, \"stop_reason\": null, \"timeout_seconds\": 20.0, \"wall_seconds\": 0.05247110599999871}, \"kind\": \"cover\", \"peak_rss_kib\": 19724, \"status\": \"violated\"}\n"
+  }
+}

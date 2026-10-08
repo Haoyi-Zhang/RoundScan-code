@@ -1,0 +1,31 @@
+{
+  "case": "stress-015",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 64,
+    "cpu_seconds": 0.1549883809999999,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 64,
+  "method": "interval",
+  "task": {
+    "certificate": "certificates/stress/stress-015-interval.json",
+    "certificate_bytes": 21698,
+    "diagnostics": {
+      "cpu_seconds": 0.03799523,
+      "max_nodes": 20000,
+      "nodes": 64,
+      "stop_reason": null,
+      "timeout_seconds": 5.0,
+      "wall_seconds": 0.03745543099998372
+    },
+    "kind": "cover",
+    "peak_rss_kib": 38772,
+    "process_wall_seconds": 0.09387177599998608,
+    "status": "safe",
+    "worker_stderr": "",
+    "worker_stdout": "{\"certificate\": \"/home/runner/work/_temp/roundscan-campaign/certificates/stress/stress-015-interval.json\", \"certificate_bytes\": 21698, \"diagnostics\": {\"cpu_seconds\": 0.03799523, \"max_nodes\": 20000, \"nodes\": 64, \"stop_reason\": null, \"timeout_seconds\": 5.0, \"wall_seconds\": 0.03745543099998372}, \"kind\": \"cover\", \"peak_rss_kib\": 38772, \"status\": \"safe\"}\n"
+  }
+}

@@ -1,0 +1,268 @@
+[frozen] 1/72 case-000
+[frozen] 2/72 case-001
+[frozen] 3/72 case-002
+[frozen] 4/72 case-003
+[frozen] 5/72 case-004
+[frozen] 6/72 case-005
+[frozen] 7/72 case-006
+[frozen] 8/72 case-007
+[frozen] 9/72 case-008
+[frozen] 10/72 case-009
+[frozen] 11/72 case-010
+[frozen] 12/72 case-011
+[frozen] 13/72 case-012
+[frozen] 14/72 case-013
+[frozen] 15/72 case-014
+[frozen] 16/72 case-015
+[frozen] 17/72 case-016
+[frozen] 18/72 case-017
+[frozen] 19/72 case-018
+[frozen] 20/72 case-019
+[frozen] 21/72 case-020
+[frozen] 22/72 case-021
+[frozen] 23/72 case-022
+[frozen] 24/72 case-023
+[frozen] 25/72 case-024
+[frozen] 26/72 case-025
+[frozen] 27/72 case-026
+[frozen] 28/72 case-027
+[frozen] 29/72 case-028
+[frozen] 30/72 case-029
+[frozen] 31/72 case-030
+[frozen] 32/72 case-031
+[frozen] 33/72 case-032
+[frozen] 34/72 case-033
+[frozen] 35/72 case-034
+[frozen] 36/72 case-035
+[frozen] 37/72 case-036
+[frozen] 38/72 case-037
+[frozen] 39/72 case-038
+[frozen] 40/72 case-039
+[frozen] 41/72 case-040
+[frozen] 42/72 case-041
+[frozen] 43/72 case-042
+[frozen] 44/72 case-043
+[frozen] 45/72 case-044
+[frozen] 46/72 case-045
+[frozen] 47/72 case-046
+[frozen] 48/72 case-047
+[frozen] 49/72 case-048
+[frozen] 50/72 case-049
+[frozen] 51/72 case-050
+[frozen] 52/72 case-051
+[frozen] 53/72 case-052
+[frozen] 54/72 case-053
+[frozen] 55/72 case-054
+[frozen] 56/72 case-055
+[frozen] 57/72 case-056
+[frozen] 58/72 case-057
+[frozen] 59/72 case-058
+[frozen] 60/72 case-059
+[frozen] 61/72 case-060
+[frozen] 62/72 case-061
+[frozen] 63/72 case-062
+[frozen] 64/72 case-063
+[frozen] 65/72 case-064
+[frozen] 66/72 case-065
+[frozen] 67/72 case-066
+[frozen] 68/72 case-067
+[frozen] 69/72 case-068
+[frozen] 70/72 case-069
+[frozen] 71/72 case-070
+[frozen] 72/72 case-071
+[stress] 1/16 stress-000
+[stress] 2/16 stress-001
+[stress] 3/16 stress-002
+[stress] 4/16 stress-003
+[stress] 5/16 stress-004
+[stress] 6/16 stress-005
+[stress] 7/16 stress-006
+[stress] 8/16 stress-007
+[stress] 9/16 stress-008
+[stress] 10/16 stress-009
+[stress] 11/16 stress-010
+[stress] 12/16 stress-011
+[stress] 13/16 stress-012
+[stress] 14/16 stress-013
+[stress] 15/16 stress-014
+[stress] 16/16 stress-015
+{
+  "certificate_files": {
+    "frozen": {
+      "checked_certificates": 288,
+      "errors": [],
+      "ok": true
+    },
+    "stress": {
+      "checked_certificates": 46,
+      "errors": [],
+      "ok": true
+    }
+  },
+  "frozen_table_source": {
+    "exact-dp": {
+      "certificate_bytes": 0,
+      "checker_cpu_seconds": 0.0,
+      "nodes": 0,
+      "producer_cpu_seconds": 0.3531800919999999,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "fresh": {
+      "certificate_bytes": 384903,
+      "checker_cpu_seconds": 0.37425049600000226,
+      "nodes": 3260,
+      "producer_cpu_seconds": 4.181677131999999,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "interval": {
+      "certificate_bytes": 2583453,
+      "checker_cpu_seconds": 0.5976319950000017,
+      "nodes": 24774,
+      "producer_cpu_seconds": 1.556767213,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "residue": {
+      "certificate_bytes": 385082,
+      "checker_cpu_seconds": 0.3848641499999993,
+      "nodes": 3260,
+      "producer_cpu_seconds": 4.099750941,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    },
+    "syntactic": {
+      "certificate_bytes": 385230,
+      "checker_cpu_seconds": 0.3806429300000004,
+      "nodes": 3260,
+      "producer_cpu_seconds": 4.098502368,
+      "status_counts": {
+        "safe": 33,
+        "violated": 39
+      }
+    }
+  },
+  "paper_fragment_sync": {
+    "checked": false,
+    "matched": null,
+    "path": null
+  },
+  "splits": {
+    "frozen": {
+      "complete_case_method_grid": true,
+      "expected_instances": 72,
+      "expected_rows": 360,
+      "instances": 72,
+      "ok": true,
+      "rows": 360
+    },
+    "stress": {
+      "complete_case_method_grid": true,
+      "expected_instances": 16,
+      "expected_rows": 80,
+      "instances": 16,
+      "ok": true,
+      "rows": 80
+    }
+  },
+  "status": "PASS",
+  "stress_by_horizon_rows": 20
+}
+{
+  "all_cited": true,
+  "all_rows_recorded_as_verified": true,
+  "errors": [],
+  "manuscript_references": 30,
+  "scope": "Inventory and recorded provenance fields only; no online or full-text verification is performed by this command.",
+  "status": "PASS",
+  "unique_identifiers": 30
+}
+{
+  "checks": {
+    "accepted_certificates": 334,
+    "block_prefix_vectors": 4914,
+    "block_witness_lifts": 4,
+    "carry_recurrence_checks": 27648,
+    "carry_step_scalar_checks": 23424,
+    "carry_step_vector_checks": 22500,
+    "clipping_negative_control_categories": 4,
+    "contraction_negative_controls": 2,
+    "cross_path_prefixes": 45072,
+    "dp_exhaustive_outputs": 48,
+    "fixed_width_assignments": 832,
+    "frozen_certificate_byte_totals": 4,
+    "frozen_cpu_table_totals": 9,
+    "frozen_design_contracts": 3,
+    "frozen_node_totals": 1,
+    "leaf_admission_boundary_methods": 4,
+    "leaf_admission_budget_unknowns": 4,
+    "leaf_admission_unverified_root_rejections": 4,
+    "oracle_prefix_evaluations": 45072,
+    "packed_assignments": 6474,
+    "packed_formulas": 867,
+    "paper_result_fragment_integrity": 1,
+    "reduction_instrumentation_crosschecks": 1043,
+    "reduction_no_clip_executions": 7306,
+    "rejected_admission_limits": 4,
+    "rejected_duplicate_keys": 1,
+    "rejected_instance_files": 4,
+    "rejected_mutations": 35,
+    "rejected_nonfinite_constants": 2,
+    "rejected_noninteger_inputs": 4,
+    "rejected_strict_model_values": 3,
+    "result_method_summaries": 10,
+    "rne_q_counterexamples": 4,
+    "rounding_modulus_exact": 258,
+    "rounding_values": 968,
+    "saturation_period_negative_controls": 2,
+    "sound_enclosures": 1920,
+    "stress_horizon_node_rows": 20,
+    "translation_periods": 8,
+    "verified_references": 30
+  },
+  "observations": {
+    "reduction_preclip_events": 11320776
+  },
+  "status": "PASS",
+  "total_assertion_units": 188847
+}
+test_baseline_expiry_after_exact_query_is_unknown (__main__.ExactBoundaryTests.test_baseline_expiry_after_exact_query_is_unknown) ... ok
+test_baseline_expiry_after_witness_search_is_unknown (__main__.ExactBoundaryTests.test_baseline_expiry_after_witness_search_is_unknown) ... ok
+test_baseline_inadmissible_leaf_is_unknown (__main__.ExactBoundaryTests.test_baseline_inadmissible_leaf_is_unknown) ... ok
+test_campaign_output_preserves_shipped_records (__main__.ExactBoundaryTests.test_campaign_output_preserves_shipped_records) ... ok
+test_campaign_rejects_historical_output_path (__main__.ExactBoundaryTests.test_campaign_rejects_historical_output_path) ... ok
+test_model_save_uses_canonical_lf (__main__.ExactBoundaryTests.test_model_save_uses_canonical_lf) ... ok
+test_producer_expiry_after_analysis_is_unknown (__main__.ExactBoundaryTests.test_producer_expiry_after_analysis_is_unknown) ... ok
+test_producer_stack_exhaustion_is_unknown (__main__.ExactBoundaryTests.test_producer_stack_exhaustion_is_unknown) ... ok
+test_wide_singletons_have_exact_extrema (__main__.ExactBoundaryTests.test_wide_singletons_have_exact_extrema) ... ok
+test_wide_word_certificate_limit_is_unchanged (__main__.ExactBoundaryTests.test_wide_word_certificate_limit_is_unchanged) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.593s
+
+OK
+{
+  "campaign_mode": "separate-rerun-and-recorded-results-rechecked",
+  "campaign_output": "/home/runner/work/_temp/roundscan-campaign",
+  "case_regeneration": {
+    "extra": [],
+    "matched": true,
+    "mismatches": []
+  },
+  "commands": [
+    "python scripts/analyze_results.py",
+    "python scripts/audit_references.py",
+    "python tests/run_all.py",
+    "python tests/test_exact_boundaries.py"
+  ],
+  "status": "PASS"
+}

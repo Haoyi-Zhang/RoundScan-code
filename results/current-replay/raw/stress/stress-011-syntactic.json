@@ -1,0 +1,31 @@
+{
+  "case": "stress-011",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 32,
+    "cpu_seconds": 0.0019983319999998805,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 32,
+  "method": "syntactic",
+  "task": {
+    "certificate": "certificates/stress/stress-011-syntactic.json",
+    "certificate_bytes": 7547,
+    "diagnostics": {
+      "cpu_seconds": 0.17498270700000002,
+      "max_nodes": 20000,
+      "nodes": 32,
+      "stop_reason": null,
+      "timeout_seconds": 5.0,
+      "wall_seconds": 0.17491037700000334
+    },
+    "kind": "cover",
+    "peak_rss_kib": 38772,
+    "process_wall_seconds": 0.23203463999999485,
+    "status": "safe",
+    "worker_stderr": "",
+    "worker_stdout": "{\"certificate\": \"/home/runner/work/_temp/roundscan-campaign/certificates/stress/stress-011-syntactic.json\", \"certificate_bytes\": 7547, \"diagnostics\": {\"cpu_seconds\": 0.17498270700000002, \"max_nodes\": 20000, \"nodes\": 32, \"stop_reason\": null, \"timeout_seconds\": 5.0, \"wall_seconds\": 0.17491037700000334}, \"kind\": \"cover\", \"peak_rss_kib\": 38772, \"status\": \"safe\"}\n"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "association": "left",
+  "boxes": [
+    [
+      [
+        -2,
+        0
+      ],
+      [
+        -1,
+        1
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ],
+      [
+        -2,
+        0
+      ]
+    ],
+    [
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        1
+      ]
+    ]
+  ],
+  "chunk_length": 2,
+  "dimension": 2,
+  "family": "coupled",
+  "h0": [
+    -2,
+    1
+  ],
+  "horizon": 3,
+  "matrices": [
+    [
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      [
+        -1,
+        2
+      ]
+    ]
+  ],
+  "metadata": {
+    "generator_seed_family": "coupled",
+    "oracle_earliest_output": null,
+    "oracle_ranges": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          -1,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    ],
+    "oracle_safe": true,
+    "oracle_witness": null,
+    "prefix_evaluations": 819,
+    "split": "development",
+    "tolerance_rule": "exact-max"
+  },
+  "name": "dev-003",
+  "rounding": "floor",
+  "scale": 2,
+  "tolerances": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "width": 4
+}

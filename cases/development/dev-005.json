@@ -1,0 +1,114 @@
+{
+  "association": "balanced",
+  "boxes": [
+    [
+      [
+        -1,
+        1
+      ]
+    ],
+    [
+      [
+        13,
+        15
+      ]
+    ],
+    [
+      [
+        0,
+        2
+      ]
+    ],
+    [
+      [
+        -1,
+        1
+      ]
+    ]
+  ],
+  "chunk_length": 2,
+  "dimension": 1,
+  "family": "unstable",
+  "h0": [
+    -2
+  ],
+  "horizon": 4,
+  "matrices": [
+    [
+      [
+        5
+      ]
+    ],
+    [
+      [
+        5
+      ]
+    ],
+    [
+      [
+        6
+      ]
+    ],
+    [
+      [
+        6
+      ]
+    ]
+  ],
+  "metadata": {
+    "generator_seed_family": "unstable",
+    "oracle_earliest_output": 1,
+    "oracle_ranges": [
+      [
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          -1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "oracle_safe": false,
+    "oracle_witness": [
+      -1,
+      13
+    ],
+    "prefix_evaluations": 120,
+    "split": "development",
+    "tolerance_rule": "exact-max-minus-one-at-first-positive-coordinate"
+  },
+  "name": "dev-005",
+  "rounding": "rne",
+  "scale": 4,
+  "tolerances": [
+    [
+      0
+    ],
+    [
+      0
+    ],
+    [
+      2
+    ],
+    [
+      0
+    ]
+  ],
+  "width": 5
+}

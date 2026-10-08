@@ -1,0 +1,17 @@
+{
+  "available_logical_cpus": 5,
+  "campaign_worker_count": 1,
+  "captured_utc": "2026-09-16T04:52:13Z",
+  "memory_available_kib_at_intake": 5144232,
+  "memory_total_kib": 6090736,
+  "notes": [
+    "No stress test was used for intake.",
+    "All campaign tasks ran one worker at a time.",
+    "Peak recorded worker RSS in result rows remains below the 4 GiB project cap."
+  ],
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "project_cpu_core_cap": 4,
+  "python": "3.13.5",
+  "swap_total_kib": 0,
+  "writable_space_bytes_at_intake": 31999148032
+}

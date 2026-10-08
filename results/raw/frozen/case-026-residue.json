@@ -1,0 +1,29 @@
+{
+  "case": "case-026",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 10,
+    "cpu_seconds": 0.0006505530000000537,
+    "error": null,
+    "status": "violated"
+  },
+  "family": "diagonal",
+  "horizon": 3,
+  "method": "residue",
+  "task": {
+    "certificate": "results/certificates/frozen/case-026-residue.json",
+    "certificate_bytes": 1744,
+    "diagnostics": {
+      "cpu_seconds": 0.00855641000000007,
+      "max_nodes": 5000,
+      "nodes": 10,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.008585481999944022
+    },
+    "kind": "cover",
+    "peak_rss_kib": 95912,
+    "process_wall_seconds": 0.6627269279999837,
+    "status": "violated"
+  }
+}

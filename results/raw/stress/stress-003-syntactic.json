@@ -1,0 +1,29 @@
+{
+  "case": "stress-003",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 8,
+    "cpu_seconds": 0.0003340549999997222,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 8,
+  "method": "syntactic",
+  "task": {
+    "certificate": "results/certificates/stress/stress-003-syntactic.json",
+    "certificate_bytes": 1632,
+    "diagnostics": {
+      "cpu_seconds": 0.01107961600000007,
+      "max_nodes": 20000,
+      "nodes": 8,
+      "stop_reason": null,
+      "timeout_seconds": 5.0,
+      "wall_seconds": 0.011080071000037606
+    },
+    "kind": "cover",
+    "peak_rss_kib": 116676,
+    "process_wall_seconds": 0.6504832740000666,
+    "status": "safe"
+  }
+}

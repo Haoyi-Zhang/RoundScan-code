@@ -1,0 +1,102 @@
+name: Scientific checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  association-coverage:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Check bounded association controls and declared coverage
+        timeout-minutes: 3
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p association-output
+          timeout --signal=TERM --kill-after=5s 30s python -B tests/test_association_coverage.py -v 2>&1 | tee association-output/controls.log
+          timeout --signal=TERM --kill-after=5s 120s python -B scripts/association_coverage.py --out "$RUNNER_TEMP/association-study" 2>&1 | tee association-output/study.log
+      - name: Preserve every association case, certificate and raw worker result
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: association-coverage-raw
+          path: |
+            association-output/
+            ${{ runner.temp }}/association-study/
+          if-no-files-found: error
+          retention-days: 14
+  finite-replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      PYTHONUTF8: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Run separate scalar summary regressions
+        timeout-minutes: 2
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p scientific-output
+          timeout --signal=TERM --kill-after=5s 90s python -B tests/test_scalar_summary_cache.py -v 2>&1 | tee scientific-output/scalar-summary.log
+      - name: Run the complete fresh campaign and retained regressions
+        timeout-minutes: 10
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p scientific-output
+          ulimit -v 2097152
+          ulimit -t 500
+          ulimit -f 262144
+          cpu=$(python -B -c 'import os; print(min(os.sched_getaffinity(0)))')
+          timeout --signal=TERM --kill-after=10s 540s taskset -c "$cpu" python -B scripts/reproduce.py \
+            --rerun-campaign --campaign-out "$RUNNER_TEMP/roundscan-campaign" \
+            2>&1 | tee scientific-output/replay.log
+          python -B - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ['RUNNER_TEMP']) / 'roundscan-campaign'
+          totals = {}
+          for split, expected in (('frozen', 360), ('stress', 80)):
+              paths = list((root / 'raw' / split).glob('*.json'))
+              assert len(paths) == expected, (split, len(paths))
+              records = [json.loads(p.read_text()) for p in paths]
+              assert all(r['task']['kind'] in ('cover', 'baseline', 'timeout') for r in records)
+              assert all(r['checker'] is None or r['checker']['accepted'] for r in records)
+              assert len({(r['case'], r['method']) for r in records}) == expected
+              totals[split] = expected
+          report = {'fresh_tasks': sum(totals.values()), 'splits': totals,
+                    'unknowns_retained': True, 'historical_measurements_overwritten': False}
+          Path('scientific-output/fresh-campaign-check.json').write_text(json.dumps(report, indent=2) + '\n')
+          print(json.dumps(report, sort_keys=True))
+          PY
+      - name: Preserve raw logs and replay outputs even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: scientific-checks-raw
+          path: |
+            scientific-output/
+            ${{ runner.temp }}/roundscan-campaign/
+            results/
+          if-no-files-found: error
+          retention-days: 14

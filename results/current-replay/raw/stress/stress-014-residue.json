@@ -1,0 +1,31 @@
+{
+  "case": "stress-014",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 64,
+    "cpu_seconds": 0.005997599999999714,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 64,
+  "method": "residue",
+  "task": {
+    "certificate": "certificates/stress/stress-014-residue.json",
+    "certificate_bytes": 21766,
+    "diagnostics": {
+      "cpu_seconds": 0.6919409870000001,
+      "max_nodes": 20000,
+      "nodes": 64,
+      "stop_reason": null,
+      "timeout_seconds": 5.0,
+      "wall_seconds": 0.691998558999984
+    },
+    "kind": "cover",
+    "peak_rss_kib": 38772,
+    "process_wall_seconds": 0.7504197089999991,
+    "status": "safe",
+    "worker_stderr": "",
+    "worker_stdout": "{\"certificate\": \"/home/runner/work/_temp/roundscan-campaign/certificates/stress/stress-014-residue.json\", \"certificate_bytes\": 21766, \"diagnostics\": {\"cpu_seconds\": 0.6919409870000001, \"max_nodes\": 20000, \"nodes\": 64, \"stop_reason\": null, \"timeout_seconds\": 5.0, \"wall_seconds\": 0.691998558999984}, \"kind\": \"cover\", \"peak_rss_kib\": 38772, \"status\": \"safe\"}\n"
+  }
+}

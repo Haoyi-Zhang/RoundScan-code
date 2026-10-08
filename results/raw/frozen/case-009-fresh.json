@@ -1,0 +1,29 @@
+{
+  "case": "case-009",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 8,
+    "cpu_seconds": 0.0007847420000000049,
+    "error": null,
+    "status": "violated"
+  },
+  "family": "unstable",
+  "horizon": 4,
+  "method": "fresh",
+  "task": {
+    "certificate": "results/certificates/frozen/case-009-fresh.json",
+    "certificate_bytes": 1463,
+    "diagnostics": {
+      "cpu_seconds": 0.0038284089999999216,
+      "max_nodes": 5000,
+      "nodes": 8,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.003826494999998431
+    },
+    "kind": "cover",
+    "peak_rss_kib": 94632,
+    "process_wall_seconds": 0.6760271599999896,
+    "status": "violated"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "case": "stress-013",
+  "checker": null,
+  "family": "stable",
+  "horizon": 64,
+  "method": "interval",
+  "task": {
+    "certificate": null,
+    "certificate_bytes": null,
+    "diagnostics": {
+      "cpu_seconds": 2.4354562289999997,
+      "max_nodes": 20000,
+      "nodes": 20000,
+      "stop_reason": "node limit",
+      "timeout_seconds": 5.0,
+      "wall_seconds": 2.4355667519999997
+    },
+    "kind": "cover",
+    "peak_rss_kib": 116676,
+    "process_wall_seconds": 3.0801093860000037,
+    "status": "unknown"
+  }
+}

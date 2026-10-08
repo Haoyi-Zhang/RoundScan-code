@@ -1,0 +1,21 @@
+{
+  "case": "case-022",
+  "checker": null,
+  "family": "diagonal",
+  "horizon": 3,
+  "method": "exact-dp",
+  "task": {
+    "kind": "baseline",
+    "peak_rss_kib": 95912,
+    "process_wall_seconds": 0.6262051129999691,
+    "result": {
+      "cpu_seconds": 0.016192757000000002,
+      "earliest_output": null,
+      "queries": 3,
+      "status": "safe",
+      "stop_reason": null,
+      "wall_seconds": 0.01619389300003604,
+      "witness": null
+    }
+  }
+}

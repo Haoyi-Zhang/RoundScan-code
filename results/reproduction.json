@@ -1,0 +1,14 @@
+{
+  "campaign_mode": "recorded-results-rechecked",
+  "case_regeneration": {
+    "extra": [],
+    "matched": true,
+    "mismatches": []
+  },
+  "commands": [
+    "python scripts/analyze_results.py",
+    "python scripts/audit_references.py",
+    "python tests/run_all.py"
+  ],
+  "status": "PASS"
+}

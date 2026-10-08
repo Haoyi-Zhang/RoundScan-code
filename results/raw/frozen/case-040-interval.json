@@ -1,0 +1,29 @@
+{
+  "case": "case-040",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 176,
+    "cpu_seconds": 0.0036276019999998965,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "stable",
+  "horizon": 4,
+  "method": "interval",
+  "task": {
+    "certificate": "results/certificates/frozen/case-040-interval.json",
+    "certificate_bytes": 15654,
+    "diagnostics": {
+      "cpu_seconds": 0.006953586000000067,
+      "max_nodes": 5000,
+      "nodes": 176,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.006962702000009813
+    },
+    "kind": "cover",
+    "peak_rss_kib": 96040,
+    "process_wall_seconds": 0.6320688510000991,
+    "status": "safe"
+  }
+}

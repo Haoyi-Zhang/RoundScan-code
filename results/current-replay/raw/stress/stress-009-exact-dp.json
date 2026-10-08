@@ -1,0 +1,23 @@
+{
+  "case": "stress-009",
+  "checker": null,
+  "family": "stable",
+  "horizon": 32,
+  "method": "exact-dp",
+  "task": {
+    "kind": "baseline",
+    "peak_rss_kib": 38772,
+    "process_wall_seconds": 0.08512350099999821,
+    "result": {
+      "cpu_seconds": 0.029994860999999998,
+      "earliest_output": null,
+      "queries": 32,
+      "status": "safe",
+      "stop_reason": null,
+      "wall_seconds": 0.030041389000004415,
+      "witness": null
+    },
+    "worker_stderr": "",
+    "worker_stdout": "{\"kind\": \"baseline\", \"peak_rss_kib\": 38772, \"result\": {\"cpu_seconds\": 0.029994860999999998, \"earliest_output\": null, \"queries\": 32, \"status\": \"safe\", \"stop_reason\": null, \"wall_seconds\": 0.030041389000004415, \"witness\": null}}\n"
+  }
+}

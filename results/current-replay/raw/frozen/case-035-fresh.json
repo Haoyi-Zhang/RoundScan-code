@@ -1,0 +1,31 @@
+{
+  "case": "case-035",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 17,
+    "cpu_seconds": 0.000999430999999995,
+    "error": null,
+    "status": "violated"
+  },
+  "family": "coupled",
+  "horizon": 3,
+  "method": "fresh",
+  "task": {
+    "certificate": "certificates/frozen/case-035-fresh.json",
+    "certificate_bytes": 2402,
+    "diagnostics": {
+      "cpu_seconds": 0.016995393000000004,
+      "max_nodes": 5000,
+      "nodes": 17,
+      "stop_reason": null,
+      "timeout_seconds": 20.0,
+      "wall_seconds": 0.01720761800000048
+    },
+    "kind": "cover",
+    "peak_rss_kib": 20108,
+    "process_wall_seconds": 0.06627755099999888,
+    "status": "violated",
+    "worker_stderr": "",
+    "worker_stdout": "{\"certificate\": \"/home/runner/work/_temp/roundscan-campaign/certificates/frozen/case-035-fresh.json\", \"certificate_bytes\": 2402, \"diagnostics\": {\"cpu_seconds\": 0.016995393000000004, \"max_nodes\": 5000, \"nodes\": 17, \"stop_reason\": null, \"timeout_seconds\": 20.0, \"wall_seconds\": 0.01720761800000048}, \"kind\": \"cover\", \"peak_rss_kib\": 20108, \"status\": \"violated\"}\n"
+  }
+}

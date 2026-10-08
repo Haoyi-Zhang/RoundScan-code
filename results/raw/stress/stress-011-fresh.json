@@ -1,0 +1,29 @@
+{
+  "case": "stress-011",
+  "checker": {
+    "accepted": true,
+    "checked_nodes": 32,
+    "cpu_seconds": 0.0023515520000003676,
+    "error": null,
+    "status": "safe"
+  },
+  "family": "unstable",
+  "horizon": 32,
+  "method": "fresh",
+  "task": {
+    "certificate": "results/certificates/stress/stress-011-fresh.json",
+    "certificate_bytes": 7543,
+    "diagnostics": {
+      "cpu_seconds": 0.18677052400000005,
+      "max_nodes": 20000,
+      "nodes": 32,
+      "stop_reason": null,
+      "timeout_seconds": 5.0,
+      "wall_seconds": 0.18677540199996656
+    },
+    "kind": "cover",
+    "peak_rss_kib": 116676,
+    "process_wall_seconds": 0.8735989919999838,
+    "status": "safe"
+  }
+}

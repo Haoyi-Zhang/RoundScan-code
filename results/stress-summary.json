@@ -1,0 +1,61 @@
+{
+  "instances": 16,
+  "methods": {
+    "exact-dp": {
+      "checker_cpu_seconds": 0.0,
+      "producer_cpu_seconds": 2.691224473,
+      "status_counts": {
+        "safe": 16,
+        "unknown": 0,
+        "violated": 0
+      },
+      "total_certificate_bytes": 0,
+      "total_nodes": 0
+    },
+    "fresh": {
+      "checker_cpu_seconds": 0.11812179300000114,
+      "producer_cpu_seconds": 23.854347229,
+      "status_counts": {
+        "safe": 12,
+        "unknown": 4,
+        "violated": 0
+      },
+      "total_certificate_bytes": 101918,
+      "total_nodes": 8340
+    },
+    "interval": {
+      "checker_cpu_seconds": 3.3914704479999984,
+      "producer_cpu_seconds": 17.67589266,
+      "status_counts": {
+        "safe": 10,
+        "unknown": 6,
+        "violated": 0
+      },
+      "total_certificate_bytes": 2780745,
+      "total_nodes": 144310
+    },
+    "residue": {
+      "checker_cpu_seconds": 0.03107963199999686,
+      "producer_cpu_seconds": 23.837749073999998,
+      "status_counts": {
+        "safe": 12,
+        "unknown": 4,
+        "violated": 0
+      },
+      "total_certificate_bytes": 101958,
+      "total_nodes": 8374
+    },
+    "syntactic": {
+      "checker_cpu_seconds": 0.03368426199999952,
+      "producer_cpu_seconds": 23.716954026,
+      "status_counts": {
+        "safe": 12,
+        "unknown": 4,
+        "violated": 0
+      },
+      "total_certificate_bytes": 101971,
+      "total_nodes": 8314
+    }
+  },
+  "split": "stress"
+}

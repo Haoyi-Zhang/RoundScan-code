@@ -1,0 +1,25 @@
+{
+  "case": "stress-001",
+  "checker": null,
+  "family": "stable",
+  "horizon": 8,
+  "method": "syntactic",
+  "task": {
+    "certificate": null,
+    "certificate_bytes": null,
+    "diagnostics": {
+      "cpu_seconds": 5.000556094999999,
+      "max_nodes": 20000,
+      "nodes": 2074,
+      "stop_reason": "wall-clock limit",
+      "timeout_seconds": 5.0,
+      "wall_seconds": 5.001729796999996
+    },
+    "kind": "cover",
+    "peak_rss_kib": 38772,
+    "process_wall_seconds": 5.053988126999997,
+    "status": "unknown",
+    "worker_stderr": "",
+    "worker_stdout": "{\"certificate\": null, \"certificate_bytes\": null, \"diagnostics\": {\"cpu_seconds\": 5.000556094999999, \"max_nodes\": 20000, \"nodes\": 2074, \"stop_reason\": \"wall-clock limit\", \"timeout_seconds\": 5.0, \"wall_seconds\": 5.001729796999996}, \"kind\": \"cover\", \"peak_rss_kib\": 38772, \"status\": \"unknown\"}\n"
+  }
+}
